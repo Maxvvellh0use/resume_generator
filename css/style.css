@@ -82,9 +82,8 @@ h1 {
 }
 
 .error-message {
-    color:
-            #fb6565;
-    display: block;
+    color: #fb6565;
+    display: none;
     font-size: 12px;
     line-height: 16px;
     margin-top: 1px;
@@ -108,3 +107,47 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     -ms-user-select: none;
     user-select: none;
 }
+
+.inputError {
+    -moz-appearance: none;
+    appearance: none;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, .2);;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    border-top-color: rgb(204, 204, 204);
+    border-right-color: rgb(204, 204, 204);
+    border-bottom-color: rgb(204, 204, 204);
+    border-left-color: rgb(204, 204, 204);
+    font-family: "Raleway",Arial,"Times New Roman",Times,sans-serif;
+    font-size: 14px;
+    margin: 10px auto;
+    padding: 5px 10px 6px;
+    position: relative;
+}
+
+#btnSave {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    height: 45px;
+    line-height: 45px;
+    text-transform: uppercase;
+    background: #8cc53e;
+    color: #fff;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 3px;
+    border: 0;
+    font-family: "Raleway",Arial,"Times New Roman",Times,sans-serif;
+    display: inline-block;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+

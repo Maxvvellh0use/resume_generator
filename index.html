@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<script src="js/script.js"></script>
     <form class="resume">
-        <section class="content-page">
+        <section id="form" class="content-page">
             <h1 class="headline-text-center">
                 Тут типа реакт
             </h1>
@@ -22,7 +21,6 @@
                     <input id="NAME" class="input-group" type="text" name="firstname"
                            value="" placeholder="" maxlength="100" data-validate="true"
                            autocomplete="true">
-                    <span class="required-placeholder">*Required</span>
                     <span class="error-message">Can we get your name?</span>
                 </div>
             </div>
@@ -32,7 +30,6 @@
                     <input id="EMAIL" class="input-group" type="email" name="email"
                            value="" placeholder="" maxlength="60" data-validate="true"
                            autocomplete="true">
-                    <span class="required-placeholder">*Required</span>
                     <span class="error-message">Can we have your email address?</span>
                 </div>
             </div>
@@ -48,7 +45,6 @@
                     <label class="form-label">Street adress</label>
                     <input id="STRT" class="input-group" type="text" name="STRT"
                            value="" placeholder="" maxlength="100" autocomplete="false">
-                    <span class="required-placeholder">*Required</span>
                 </div>
             </div>
             <div class="city">
@@ -56,7 +52,6 @@
                     <label class="form-label">City</label>
                     <input id="CITY" class="input-group" type="text" name="CITY"
                            value="" placeholder="" maxlength="50" autocomplete="false">
-                    <span class="required-placeholder">*Required</span>
                 </div>
             </div>
             <div class="country">
@@ -64,7 +59,6 @@
                     <label class="form-label">Country</label>
                     <input id="COUNTRY" class="input-group" type="text" name="COUNTRY"
                            value="" placeholder="" maxlength="50" autocomplete="false">
-                    <span class="required-placeholder">*Required</span>
                 </div>
             </div>
             <div class="phone-number">
@@ -73,14 +67,11 @@
                     <input id="NUMB" class="input-group" type="text" name="NUMB"
                            value="" placeholder="" maxlength="20" autocomplete="true"
                            data-validate="true">
-                    <span class="required-placeholder">*Required</span>
                 </div>
             </div>
             <div class="buttons">
-                <a id="btnSave" class="button-save" href="">Save and Continue</a>
+                <a id="btnSave" class="button-save">Save and Continue</a>
             </div>
-
-
         </section>
 
 
@@ -94,3 +85,4 @@
 
 </body>
 
+<script src="js/script.js"></script>
