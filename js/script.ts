@@ -21,10 +21,6 @@
         btnSave.addEventListener("click", isCheck);
     }
 
-    else if () {
-
-    }
-
 
 })();
 

@@ -1,7 +1,7 @@
 "use strict";
 (function () {
     var inputs = document.querySelectorAll('input');
-    var btnSave = document.querySelector('#btnSave');
+    var btnSave = document.querySelector('#btn');
     var isCheck = function is() {
         var inputsArr;
         inputsArr = Array.from(inputs);

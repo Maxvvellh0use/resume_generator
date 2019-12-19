@@ -127,7 +127,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     position: relative;
 }
 
-#btnSave {
+.button-save {
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
@@ -149,5 +149,21 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     text-decoration: none;
 }
 
+.thumb-resume {
+    position: relative;
+    padding-left: 50px;
+}
+
+.pdf-paper {
+    position: relative;
+    border: 1px solid #ccc;
+    margin-left: 800px;
+    width: 430px;
+    height: 550px;
+}
+
+.thumb-resume>span {
+    padding-top: 600px;
+}
 
 

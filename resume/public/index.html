@@ -16,7 +16,7 @@
   <body>
     <form class="resume">
       <section id="form" class="content-page">
-        <h1 class="headline-text-center">
+        <h1 id="headline-form" class="headline-text-center">
           Тут типа реакт
         </h1>
         <p class="subheadline-text-center">
@@ -25,8 +25,8 @@
         <div class="name">
           <div class="form-group">
             <label class="form-label">Name</label>
-            <input id="NAME" class="input-group" type="text" name="firstname"
-                   value="" placeholder="" maxlength="100" data-validate="true"
+            <input id="NAME" onchange="NameForm()" class="input-group" type="text" name="firstname"
+                   value="dfgdfg" placeholder="" maxlength="100" data-validate="true"
                    autocomplete="true">
             <span class="error-message">Can we get your name?</span>
           </div>
@@ -76,17 +76,20 @@
                    data-validate="true">
           </div>
         </div>
-        <div class="buttons">
-          <a id="btnSave" class="button-save">Save and Continue</a>
+        <div id="btn" class="buttons">
         </div>
       </section>
       <div class="example-editor-container">
+        <div class="thumbnail-container">
+          <div class="thumbnail"></div>
+            <section id="preview-container" class="preview-container">
+              <header class="preview-header section-clearfix">
+                <h1 class="user-name" id="user-name">Artyom Zdarova</h1>
+              </header>
 
-
-
-
-
-
+            </section>
+          </div>
+        </div>
       </div>
 
 
