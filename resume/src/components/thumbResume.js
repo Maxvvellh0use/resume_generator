@@ -17,7 +17,7 @@ class ThumbResume extends React.Component {
 
     render() {
         return (
-            <div className={'pdf-paper'}>
+            <div className='pdf-paper'>
                 <h1>{document.getElementById('NAME').value}</h1>
                     <div className={'thumb-resume'}>
                         <span>{document.getElementById('EMAIL').value}</span><br/>
@@ -31,9 +31,6 @@ class ThumbResume extends React.Component {
     }
 }
 
-ReactDOM.render(
-    <ThumbResume />,
-    document.getElementById('preview-container')
-);
+
 
 export default ThumbResume
