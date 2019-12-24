@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../Resume.css';
 import ThumbResume from "./ThumbResume";
-import InputEmail from "./InputEmail";
 import App from './App'
 
 

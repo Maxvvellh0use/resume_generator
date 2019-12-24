@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import InputName from "./InputName.js";
-import InputEmail from "./InputEmail";
-import InputStreet from "./InputStreet";
-import InputCity from "./InputCity";
-import InputCount from "./InputCount";
-import InputNumb from "./InputNumb";
+import Input from "./Input.js";
+import Checkbox from "./Checkbox";
 import '../Resume.css';
 import ButtonSave from "./buttonSave";
 import Preview from "./Preview";
+
 
 class App extends  React.Component {
     constructor(props) {
@@ -37,12 +34,13 @@ class App extends  React.Component {
                 <p className="subheadline-text-center">
                     With this info, recruiters will be able to find you.
                 </p>
-                <InputName onChange={this.handleChange}  />
-                <InputEmail onChange={this.handleChange} />
-                <InputStreet onChange={this.handleChange} />
-                <InputCity onChange={this.handleChange}/>
-                <InputCount onChange={this.handleChange}/>
-                <InputNumb onChange={this.handleChange} />
+                <Input id={'NAME'} className={'input-group'} type={'text'} name={'firstname'} maxLength={'100'} label={'Name'} onChange={this.handleChange}  />
+                <Input id={'EMAIL'} className={'input-group'} type={'email'} name={'EMAIL'} maxLength={60} label={'Email'} onChange={this.handleChange} />
+                <Checkbox/><br/>
+                <Input id={'STRT'} className={'input-group'} type={'text'} name={'STRT'} maxLength={'100'} label={'Street'} onChange={this.handleChange} />
+                <Input id={'CITY'} className={'input-group'} type={'text'} name={'CITY'} maxLength={'100'} label={'City'} onChange={this.handleChange}/>
+                <Input id={'COUNTRY'} className={'input-group'} type={'text'} name={'COUNTRY'} maxLength={'50'} label={'Country'} onChange={this.handleChange}/>
+                <Input id={'NUMB'} className={'input-group'} type={'text'} name={'NUMB'} maxLength={'20'} label={'Phone number'} onChange={this.handleChange} />
                 <ButtonSave onClick={this.handleSubmit} />
             </section>
             <Preview />

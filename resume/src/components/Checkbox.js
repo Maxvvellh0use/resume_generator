@@ -2,8 +2,7 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import '../Resume.css';
 
-class Checkbox extends React.Component {
-    render() {
+const Checkbox = () => {
         return (
             <div className="hide-email">
                 <div className="checkbox">
@@ -13,5 +12,6 @@ class Checkbox extends React.Component {
                 </div>
             </div>
         );
-    }
-}
+};
+
+export default Checkbox
