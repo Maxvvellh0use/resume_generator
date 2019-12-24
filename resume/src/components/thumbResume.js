@@ -15,6 +15,7 @@ class ThumbResume extends React.Component {
         this.setState({value: event.target.value});
     }
 
+
     render() {
         return (
             <div className='pdf-paper'>

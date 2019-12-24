@@ -1,6 +1,7 @@
 import React from "react";
 
 class Preview extends React.Component {
+
     render() {
         return (
             <div className="example-editor-container">
@@ -9,7 +10,6 @@ class Preview extends React.Component {
                         <header className="preview-header section-clearfix">
                             <h1 className="user-name" id="user-name">Artyom Zdarova</h1>
                         </header>
-
                     </section>
                 </div>
             </div>

@@ -9,7 +9,7 @@ class InputCity extends React.Component {
                 <div className="form-group">
                     <label className="form-label">City</label>
                     <input id="CITY" className="input-group" type="text" name="CITY"
-                           value="" placeholder="" maxLength="50" autoComplete="false" />
+                           placeholder="" maxLength="50" autoComplete="false" />
                 </div>
             </div>
         );

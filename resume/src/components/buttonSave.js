@@ -2,11 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../Resume.css';
 import ThumbResume from "./ThumbResume";
+import InputEmail from "./InputEmail";
+import App from './App'
 
-class ButtonSave extends React.Component {
-    render() {
-        return <button className={'button-save'}>Save and Continue</button>;
-    }
-}
+
+
+
+const ButtonSave = props => {
+        return (
+            <button className={'button-save'} onClick={props.onClick} type={'button'} >Save and Continue</button>
+        )
+    };
 
 export default ButtonSave
