@@ -1,8 +1,6 @@
 import React from "react";
 
-class Preview extends React.Component {
-
-    render() {
+const Preview = () => {
         return (
             <div className="example-editor-container">
                 <div className="thumbnail-container">
@@ -14,7 +12,6 @@ class Preview extends React.Component {
                 </div>
             </div>
         );
-    }
-}
+};
 
 export default Preview
