@@ -44,7 +44,6 @@ class App extends  React.Component {
                 <ButtonSave />
             </section>
             <Preview />
-           <input value={this.state.value}/>
         </form>
         /*Сабмитить данные из формы в джсон, парсить и вывести в миниатюру*/
     }
