@@ -3,7 +3,7 @@ import '../Resume.css';
 
 const ButtonSave = props => {
         return (
-            <button className={'button-save'} onClick={props.onClick}>Save and Continue</button>
+            <button className={'button-save'} onClick={props.submit}>Save and Continue</button>
         )
     };
 
