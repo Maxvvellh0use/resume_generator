@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import { Field, reduxForm } from 'redux-form';
 import Input from "./Input";
 import Checkbox from "./Checkbox";
 import ButtonSave from "./ButtonSave";
@@ -19,12 +20,12 @@ class Form extends PureComponent {
 
     handleSubmit() {
         return (
-            alert ('Отправленное имя: ' + this.state.value)
+            'Отправленное имя: ' + this.state.value
         )
     }
 
     render() {
-        return <form className={'resume'} >
+        return <form onSubmit={this.handleSubmit()} className={'resume'} >
                 <section id="form" className={"content-page"}>
                     <h1 id="headline-form" className="headline-text-center">
                         Тут типа реакт
@@ -39,9 +40,9 @@ class Form extends PureComponent {
                     <Input id={'CITY'} className={'input-group'} type={'text'} name={'CITY'} maxLength={'100'} label={'City'} value={this.state.value} onChange={this.handleChange}/>
                     <Input id={'COUNTRY'} className={'input-group'} type={'text'} name={'COUNTRY'} maxLength={'50'} label={'Country'} value={this.state.value} onChange={this.handleChange}/>
                     <Input id={'NUMB'} className={'input-group'} type={'text'} name={'NUMB'} maxLength={'20'} label={'Phone number'} value={this.state.value} onChange={this.handleChange} />
-                    <ButtonSave submit={this.handleSubmit} />
+                    <ButtonSave />
                 </section>
-                <Preview />
+                <Preview onSubmit={this.onSubmit} />
             </form>
         }
     }
